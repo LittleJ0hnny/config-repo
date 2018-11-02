@@ -56,3 +56,7 @@ person:
 
 # Make sure the OAuth2 token is only relayed when using the internal API,
 # do not pass any authentication to the external API
+proxy:
+  auth:
+    routes:
+      api: oauth2
