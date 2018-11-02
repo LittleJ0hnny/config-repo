@@ -46,6 +46,7 @@ security:
     client:
       accessTokenUri: http://localhost:8085/oauth/token
       userAuthorizationUri: http://localhost:8085/oauth/authorize
+      scope: read, write
       clientId: authserver
       clientSecret: passwordforauthserver
     resource:
