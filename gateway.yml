@@ -14,15 +14,15 @@ zuul:
   routes:
     discovery:
       path: /discovery/**
-      sensitive-headers: Set-Cookie,Authorization
+      sensitive-headers: Cookie, Set-Cookie
       url: http://localhost:8761
     resource-server:
       path: /resource-server/**
-      sensitive-headers: Set-Cookie,Authorization
+      sensitive-headers: Cookie, Set-Cookie
       url: http://localhost:8084
     authserver:
       path: /authserver/**
-      sensitive-headers: Set-Cookie,Authorization
+      sensitive-headers: Cookie, Set-Cookie
       url: http://localhost:8085
        
 hystrix:
