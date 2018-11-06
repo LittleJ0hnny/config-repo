@@ -13,7 +13,7 @@ eureka:
 zuul:
   FormBodyWrapperFilter:
     pre:
-      disable: true   
+      disable: false 
   routes:
     discovery:
       path: /discovery/**
