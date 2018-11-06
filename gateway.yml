@@ -11,6 +11,9 @@ eureka:
     registryFetchIntervalSeconds: 5
 
 zuul:
+  FormBodyWrapperFilter:
+    pre:
+      disable: true   
   routes:
     discovery:
       path: /discovery/**
