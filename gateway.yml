@@ -38,7 +38,7 @@ security:
   sessions: NEVER
   oauth2:
     client:
-      grant-type: password, refresh_token
+      grant-type: password, refresh_token, client_credentials
     resource:
       userInfoUri: http://localhost:8085/person
       jwt:
