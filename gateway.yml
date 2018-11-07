@@ -38,7 +38,12 @@ security:
   sessions: NEVER
   oauth2:
     client:
-      grant-type: client_credentials
+      accessTokenUri: http://localhost:8085/oauth/token
+      userAuthorizationUri: http://localhost:8085/oauth/authorize
+      scope: read, write
+      clientId: authserver
+      clientSecret: passwordforauthserver
+      grant-type: password, refresh_token
     resource:
       userInfoUri: http://localhost:8085/person
       jwt:
