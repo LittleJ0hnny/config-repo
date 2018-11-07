@@ -27,6 +27,10 @@ zuul:
       path: /authserver/**
       sensitive-headers: Cookie, Set-Cookie
       url: http://localhost:8085
+    image-service:
+      path:/image-service/**
+      sensitive-headers: Cookie, Set-Cookie
+      url: http://localhost:8400
             
 management:
   endpoints:
