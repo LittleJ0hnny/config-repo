@@ -61,3 +61,10 @@ security:
             5AkuJ7iSWqsGYDSXqFR4k1apErbRB51Qwqh6dlJza+OhhNXqdwbvPZLo3M13GQqD
             mwIDAQAB
             -----END PUBLIC KEY-----
+            
+ feign:
+   hystrix:
+     enabled: true
+
+hystrix:
+  shareSecurityContext: true
