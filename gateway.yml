@@ -62,9 +62,9 @@ security:
             mwIDAQAB
             -----END PUBLIC KEY-----
             
- feign:
-   hystrix:
-     enabled: true
+feign:
+  hystrix:
+    enabled: true
 
 hystrix:
   shareSecurityContext: true
