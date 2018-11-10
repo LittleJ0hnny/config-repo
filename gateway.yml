@@ -2,9 +2,6 @@ server:
   port: 8083
 
 spring:
-  redis:
-    host: localhost
-    port: 6379
   application:
     name: gateway
 
@@ -20,6 +17,8 @@ zuul:
       disable: false
             
 management:
+  security:
+    sessions: always
   endpoints:
     web:
       exposure:
