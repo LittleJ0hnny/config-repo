@@ -13,24 +13,7 @@ eureka:
 zuul:
   FormBodyWrapperFilter:
     pre:
-      disable: false 
-  routes:
-    discovery:
-      path: /discovery/**
-      sensitive-headers: Cookie, Set-Cookie
-      url: http://localhost:8761
-    resource-server:
-      path: /resource-server/**
-      sensitive-headers: Cookie, Set-Cookie
-      url: http://localhost:8084
-    authserver:
-      path: /authserver/**
-      sensitive-headers: Cookie, Set-Cookie
-      url: http://localhost:8085
-    image-service:
-      path: /image-service/**
-      sensitive-headers: Cookie, Set-Cookie
-      url: http://localhost:8400
+      disable: false
             
 management:
   endpoints:
