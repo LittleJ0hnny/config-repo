@@ -30,3 +30,9 @@ management:
     web:
       exposure:
         include: '*'
+        
+token:
+  access:
+    default_time: 1800
+  refresh:
+    default_time: 86400
