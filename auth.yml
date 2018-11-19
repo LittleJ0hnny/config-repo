@@ -19,6 +19,8 @@ spring:
       javax:
         persistence:
           validation: none
+      hibernate:
+        enable_lazy_load_no_trans: true
 
 eureka:
   client:
