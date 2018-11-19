@@ -11,7 +11,7 @@ eureka:
     registryFetchIntervalSeconds: 5
 
 zuul:
-  sensitive-headers: Cookie, Set-Cookie
+  sensitiveHeaders: Cookie, Set-Cookie
   FormBodyWrapperFilter:
     pre:
       disable: false
