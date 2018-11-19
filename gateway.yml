@@ -11,7 +11,6 @@ eureka:
     registryFetchIntervalSeconds: 5
 
 zuul:
-  sensitive-headers: Cookie, Set-Cookie
   FormBodyWrapperFilter:
     pre:
       disable: false
@@ -19,6 +18,7 @@ zuul:
     discovery:
       path: /discovery/**
       url: http://discUser:discPassword@localhost:8761
+      sensitive-headers: Cookie, Set-Cookie
     authservice:
       path: /authservice/**
       url: http://localhost:8200
