@@ -12,6 +12,9 @@ eureka:
 
 zuul:
   sensitive-headers: Cookie, Set-Cookie
+  FormBodyWrapperFilter:
+    pre:
+      disable: false
   routes:
     discovery:
       path: /discovery/**
