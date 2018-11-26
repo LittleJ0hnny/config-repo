@@ -37,7 +37,6 @@ security:
       clientSecret: passwordforauthserver
       grant-type: password, refresh_token
     resource:
-      id: gateway
       jwt:
         keyValue: |
             -----BEGIN PUBLIC KEY-----

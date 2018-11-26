@@ -27,7 +27,6 @@ security:
       clientSecret: passwordforauthserver
       grant-type: password, refresh_token
     resource:
-      id: image-service
       jwt:
         keyValue: |
             -----BEGIN PUBLIC KEY-----
